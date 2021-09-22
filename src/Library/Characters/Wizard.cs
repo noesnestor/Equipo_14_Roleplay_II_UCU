@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Wizard
+    public class Wizard : IPersonaje
     {
         private int health = 100;
 
@@ -43,11 +43,11 @@ namespace RoleplayGame
             }
         }
 
-        public void ReceiveAttack(int power)
+        public void ReceiveAttack(IPersonaje pj)
         {
-            if (this.DefenseValue < power)
+            if (this.DefenseValue < pj.AttackValue)
             {
-                this.Health -= power - this.DefenseValue;
+                this.Health -= pj.AttackValue - this.DefenseValue;
             }
         }
 

@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Knight : IPersonaje
+    public class Knight : IPersonaje , IAtaque , IDefensa
     {
         private int health = 100;
 

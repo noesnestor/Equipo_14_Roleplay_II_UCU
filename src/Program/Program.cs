@@ -21,16 +21,16 @@ namespace Program
             gimli.Helmet = new Helmet();
             IPersonaje igimli = gimli;
 
-            Console.WriteLine($"Gimli has {gimli.Health}");
-            Console.WriteLine($"Gandalf attacks Gimli with {gandalf.AttackValue}");
+            Console.WriteLine($"Gimli has {gimli.Health} HP");
+            Console.WriteLine($"Gandalf attacks Gimli with {gandalf.AttackValue} AP");
 
             igimli.ReceiveAttack(igandalf);
 
-            Console.WriteLine($"Gimli has {gimli.Health}");
+            Console.WriteLine($"Gimli has {gimli.Health} HP");
 
             gimli.Cure();
 
-            Console.WriteLine($"Gimli has {gimli.Health}");
+            Console.WriteLine($"Gimli has {gimli.Health} HP");
         }
     }
 }

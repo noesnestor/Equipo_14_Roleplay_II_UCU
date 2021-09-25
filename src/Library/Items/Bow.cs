@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Bow
+    public class Bow: IAtaque
     {
         public int AttackValue 
         {

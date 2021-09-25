@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Dwarf : IPersonaje, IAtaque , IDefensa
+    public class Dwarf : IPersonaje
     {
         private int health = 100;
 

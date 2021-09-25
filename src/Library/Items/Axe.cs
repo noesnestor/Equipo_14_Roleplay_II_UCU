@@ -1,8 +1,8 @@
 namespace RoleplayGame
 {
-    public class Axe
+    public class Axe  : IItemAtq
     {
-        public int AttackValue 
+        public int AttackValue
         {
             get
             {
